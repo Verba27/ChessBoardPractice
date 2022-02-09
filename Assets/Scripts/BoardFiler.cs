@@ -10,21 +10,21 @@ namespace DefaultNamespace
         
         private void Start()
         {
-            for (int i = 0; i < allFiguresConfig.numOf; i++)
+            for (int i = 0; i < allFiguresConfig.figureTypes.Length; i++)
             {
                 for (int j = 0; j < allFiguresConfig.figureTypes[i].index.Length; j++)
                 {
-                    var fig = Instantiate(allFiguresConfig.figureTypes[i].figureInfos.prefab);
-                    fig.transform.position = board.positions[allFiguresConfig.figureTypes[i].index[j]];
-                    fig.transform.localScale = Vector3.one;
-                    if (allFiguresConfig.figureTypes[i].index[j] < 16)
+                    GameObject go = new GameObject();
+                    if (allFiguresConfig.figureTypes[i].index[j] < board.positions.Length / 2)
                     {
-                        fig.GetComponent<Renderer>().material = allFiguresConfig.figureTypes[i].figMaterial[0]; 
+                        go = Instantiate(allFiguresConfig.figureTypes[i].prefab[0]);
                     }
                     else
                     {
-                        fig.GetComponent<Renderer>().material = allFiguresConfig.figureTypes[i].figMaterial[1];
+                        go = Instantiate(allFiguresConfig.figureTypes[i].prefab[1]);
                     }
+                    go.transform.position = board.positions[allFiguresConfig.figureTypes[i].index[j]];
+                    go.transform.localScale = Vector3.one;
                 }
             }
         }

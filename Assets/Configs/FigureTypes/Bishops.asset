@@ -16,4 +16,7 @@ MonoBehaviour:
   figMaterial:
   - {fileID: 2100000, guid: 00912c1e55787984d8a57cef15d87a8b, type: 2}
   - {fileID: 2100000, guid: 519bb7ad9c0b01145b66756f3c261e30, type: 2}
+  prefab:
+  - {fileID: 1028868664329696, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
+  - {fileID: 1672242659374470, guid: f005021ceced8b240983e71a3d481180, type: 3}
   index: 02000000050000001a0000001d000000

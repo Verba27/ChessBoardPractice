@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b15f1d7f6ba2c9642a3b7d8142404d65, type: 3}
   m_Name: AllFigures
   m_EditorClassIdentifier: 
-  numOf: 16
+  numOf: 6
   figureTypes:
   - {fileID: 11400000, guid: d1a9fc04b0a83e94484ff4f54259192f, type: 2}
   - {fileID: 11400000, guid: 5f1fc525d3b063340b3e416642d4c011, type: 2}
@@ -20,6 +20,3 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6f62b4597a5ee00429b9a62a2ccee83d, type: 2}
   - {fileID: 11400000, guid: ef337e44c33ad3b44b995262d350d45e, type: 2}
   - {fileID: 11400000, guid: d805a9e9fae78774cb95c9c3378af961, type: 2}
-  figureColor:
-  - {fileID: 2100000, guid: 5a3ab2601b4968341a959d89a206c835, type: 2}
-  - {fileID: 2100000, guid: adefce1589f7e584ebd7c6d597a46ee9, type: 2}
